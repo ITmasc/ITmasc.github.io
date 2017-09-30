@@ -1,8 +1,8 @@
 <table>
   <tbody>
   <tr>
-    <td>Progetti Android</td>
-    <td>Progetti Desktop</a></td>
+    <td><a href='andr_proj/home.html'>Progetti Android</a></td>
+    <td><a href='desk_proj/home.html'>Progetti Desktop</a></td>
   </tr>
   </tbody>
 </table>
