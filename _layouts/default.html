@@ -2,21 +2,21 @@
 <html lang="en-US" >  
   <head>
     <script>
-  var langu
+  var langu;
 
   if (navigator.languages && navigator.languages.length) {
     // latest versions of Chrome and Firefox set this correctly
-    langu = navigator.languages[0]
+    langu = navigator.languages[0];
   } else if (navigator.userLanguage) {
     // IE only
-    langu = navigator.userLanguage
+    langu = navigator.userLanguage;
   } else {
     // latest versions of Chrome, Firefox, and Safari set this correctly
-    langu = navigator.language
+    langu = navigator.language;
   }
     
-      document.getElementsByTagName('html')[0].setAttribute('lang', langu)
-    
+      document.documentElement.setAttribute('lang', langu);
+    alert(document.documentElement.getAttribute('lang'));
     </script>
     <meta charset="UTF-8">
 
@@ -37,7 +37,7 @@
       {{ content }}
 
       <footer class="site-footer">
-         {% if document.getElementsByTagName('html')[0].getAttribute('lang') == "it-IT" %}
+         {% if document.documentElement.getAttribute('lang') == "it-IT" %}
         <span class="site-footer-credits">ITmasc, tutti i diritti sono riservati.</span>
         {% else %}
         <span class="site-footer-credits">ITmasc, all rights reserved.</span>
