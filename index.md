@@ -1,11 +1,4 @@
-<table>
-  <tbody>
-  <tr>
-    <td><a href='https://itmasc.github.io/Android/home.html'>Progetti Android</a></td>
-    <td><a href='https://itmasc.github.io/Desktop/home.html'>Progetti Desktop</a></td>
-  </tr>
-  </tbody>
-</table>
+<div id="menu"></div>
 <h2>ITmasc è il nickname di Mauro Sciancalepore, italiano appassionato di informatica e tecnologia.</h2>
 <p>Esperto autodidatta di programmazione mobile su Android, pubbica i suoi progetti sul <a href='https://play.google.com/store/apps/dev?id=8923012172692890020' target="_blank" >Play Store</a>.</p>
 <p>Potete trovare più informazioni su:</p>
