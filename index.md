@@ -1,8 +1,8 @@
 <table>
   <tbody>
   <tr>
-    <td><a href='andr_proj/home.html'>Progetti Android</a></td>
-    <td><a href='desk_proj/home.html'>Progetti Desktop</a></td>
+    <td><a href='https://itmasc.github.io/Android/home.html'>Progetti Android</a></td>
+    <td><a href='https://itmasc.github.io/Desktop/home.html'>Progetti Desktop</a></td>
   </tr>
   </tbody>
 </table>
