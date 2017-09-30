@@ -39,9 +39,9 @@
       <footer class="site-footer">
         <script>
           if (document.documentElement.getAttribute('lang') == 'it-IT')
-        <span class="site-footer-credits">ITmasc, tutti i diritti sono riservati.</span>
+              document.getElementsByClassName('site-footer-credits')[0].setAttribute('textContent', 'ITmasc, tutti i diritti sono riservati.');
           else
-        <span class="site-footer-credits">ITmasc, all rights reserved.</span>
+              document.getElementsByClassName('site-footer-credits')[0].setAttribute('textContent', 'ITmasc, all rights reserved.');
         </script>
       </footer>
     </section>
