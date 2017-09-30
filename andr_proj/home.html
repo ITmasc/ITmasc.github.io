@@ -9,6 +9,24 @@
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
   </head>
 <body>
-<h1>Android projects</h1>
+  <section class="page-header">
+      <h1 class="project-name">ITmasc</h1>
+      <h2 class="project-tagline">{{ site.description | default: site.github.project_tagline }}</h2>
+    </section>
+
+    <section class="main-content">
+      <h1>Android projects</h1>
+
+      <footer class="site-footer">
+        <span class='site-footer-credits'></span>
+        <script>
+          if (document.documentElement.getAttribute('lang') == 'it-IT')
+              document.getElementsByClassName('site-footer-credits')[0].textContent = 'ITmasc, tutti i diritti sono riservati.';
+          else
+              document.getElementsByClassName('site-footer-credits')[0].textContent = 'ITmasc, all rights reserved.';
+        </script>
+      </footer>
+    </section>
+
 </body>
 </html>
