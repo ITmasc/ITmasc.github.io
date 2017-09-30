@@ -1,22 +1,7 @@
 <!DOCTYPE html>
 <html lang='en-US' >  
   <head>
-    <script>
-  var langu;
-
-  if (navigator.languages && navigator.languages.length) {
-    // latest versions of Chrome and Firefox set this correctly
-    langu = navigator.languages[0];
-  } else if (navigator.userLanguage) {
-    // IE only
-    langu = navigator.userLanguage;
-  } else {
-    // latest versions of Chrome, Firefox, and Safari set this correctly
-    langu = navigator.language;
-  }
-    
-      document.documentElement.setAttribute('lang', langu);
-    </script>
+    <script type="text/javascript" src="scripts/locale.js"></script>
     <meta charset="UTF-8">
 
 {% seo %}
