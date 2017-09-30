@@ -1,13 +1,11 @@
+// The original script has been taken from here: https://github.com/maxogden/browser-locale
+// All the rights belong to its original creator.
 var langu;
-
   if (navigator.languages && navigator.languages.length) {
-    // latest versions of Chrome and Firefox set this correctly
     langu = navigator.languages[0];
   } else if (navigator.userLanguage) {
-    // IE only
     langu = navigator.userLanguage;
   } else {
-    // latest versions of Chrome, Firefox, and Safari set this correctly
     langu = navigator.language;
   }
     
