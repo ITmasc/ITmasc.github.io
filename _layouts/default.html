@@ -16,7 +16,6 @@
   }
     
       document.documentElement.setAttribute('lang', langu);
-    alert(document.documentElement.getAttribute('lang'));
     </script>
     <meta charset="UTF-8">
 
@@ -40,9 +39,9 @@
         <span class='site-footer-credits'></span>
         <script>
           if (document.documentElement.getAttribute('lang') == 'it-IT')
-              document.getElementsByClassName('site-footer-credits')[0].setAttribute('textContent', 'ITmasc, tutti i diritti sono riservati.');
+              document.getElementsByClassName('site-footer-credits')[0].textContent = 'ITmasc, tutti i diritti sono riservati.';
           else
-              document.getElementsByClassName('site-footer-credits')[0].setAttribute('textContent', 'ITmasc, all rights reserved.');
+              document.getElementsByClassName('site-footer-credits')[0].textContent = 'ITmasc, all rights reserved.';
         </script>
       </footer>
     </section>
