@@ -15,7 +15,7 @@
     langu = navigator.language
   }
     
-      document.getElementByTagName('html').setAttribute('lang', langu)
+      document.getElementsByTagName('html')[0].setAttribute('lang', langu)
     
     </script>
     <meta charset="UTF-8">
@@ -37,7 +37,7 @@
       {{ content }}
 
       <footer class="site-footer">
-         {% if lang == "it-IT" %}
+         {% if document.getElementsByTagName('html')[0].getAttribute('lang') == "it-IT" %}
         <span class="site-footer-credits">ITmasc, tutti i diritti sono riservati.</span>
         {% else %}
         <span class="site-footer-credits">ITmasc, all rights reserved.</span>
