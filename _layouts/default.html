@@ -1,6 +1,24 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "it-IT" }}">
   <head>
+    <script>
+  var langu
+
+  if (navigator.languages && navigator.languages.length) {
+    // latest versions of Chrome and Firefox set this correctly
+    langu = navigator.languages[0]
+  } else if (navigator.userLanguage) {
+    // IE only
+    langu = navigator.userLanguage
+  } else {
+    // latest versions of Chrome, Firefox, and Safari set this correctly
+    langu = navigator.language
+  }
+
+  return langu
+}
+    lang = langu
+    </script>
     <meta charset="UTF-8">
 
 {% seo %}
@@ -20,7 +38,7 @@
       {{ content }}
 
       <footer class="site-footer">
-         {% if site.lang == "it-IT" %}
+         {% if lang == "it-IT" %}
         <span class="site-footer-credits">ITmasc, tutti i diritti sono riservati.</span>
         {% else %}
         <span class="site-footer-credits">ITmasc, all rights reserved.</span>
