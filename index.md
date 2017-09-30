@@ -2,7 +2,7 @@
   <tbody>
   <tr>
     <td>Progetti Android</td>
-    <td>Progetti Desktop</a>
+    <td>Progetti Desktop</a></td>
   </tr>
   </tbody>
 </table>
