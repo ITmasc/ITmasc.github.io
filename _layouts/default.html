@@ -4,6 +4,11 @@
   <head>
     <title></title>
    <script type="text/javascript" src="https://itmasc.github.io/scripts/title.js"></script>
+    <script> 
+    $(function(){
+      $("#menu").load("https://itmasc.github.io/menu.html"); 
+    });
+    </script> 
     <link rel="shortcut icon" type="image/x-icon" href="https://itmasc.github.io/icn.png">
     <script type="text/javascript" src="https://itmasc.github.io/scripts/locale.js"></script>
     <meta charset="UTF-8">
@@ -15,11 +20,11 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <script src="https://itmasc.github.io/scripts/jquery.js"></script> 
-    <script> 
-    $(function(){
-      $("#menu").load("https://itmasc.github.io/menu.html"); 
-    });
-    </script> 
+    
+    
+    {% if site.google_analytics %}
+    {% include analytics.html %}
+    {% endif %}
   </head>
   
   <body>
